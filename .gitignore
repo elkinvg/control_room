@@ -6,3 +6,4 @@
 !components/
 !/apps/
 /apps/cr_*
+!Readme.md
