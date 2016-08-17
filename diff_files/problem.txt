@@ -1,0 +1,2 @@
+1. Ext.toast is not a function
+	-> add 'Ext.window.Toast'

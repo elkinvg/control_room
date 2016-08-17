@@ -1,0 +1,48 @@
+items: [{
+            xtype: 'container',
+            flex: 1,
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+//            layout: {
+//                type: 'table',
+//                columns: 6,
+//                tableAttrs: {
+//                    style: {
+//                        width: '100%'
+//                    }}
+////                align: 'middle'
+//            },
+            defaults: {
+                margin: '0 20 0 20',
+                flex: 1,
+            },
+            defaultType: 'displayfield',
+            items: [{
+                    fieldLabel: 'Двери модулятора закрыты',
+                    value: '<span style="color:red; font-size:400%"> &#9899; </span>'},
+                {
+                    fieldLabel: 'Охлаждение накального трансформатора',
+                    value: '<span style="color:red; font-size:400%"> &#9899; </span>'},
+                {
+                    fieldLabel: 'Штанга повешена',
+                    value: '<span style="color:red; font-size:400%"> &#9899; </span>'},
+                {
+                    fieldLabel: 'Двери модулятора закрыты',
+                    value: '<span style="color:red; font-size:400%"> &#9899; </span>'},
+                {
+                    fieldLabel: 'Охлаждение накального трансформатора',
+                    value: '<span style="color:red; font-size:400%"> &#9899; </span>'},
+                {
+                    fieldLabel: 'Штанга повешена',
+                    value: '<span style="color:red; font-size:400%"> &#9899; </span>'}
+//    {
+//                            text: 'Prompt Dialog',
+//                        }, {
+//                            text: 'Multi-line Prompt',
+//                        }, {
+//                            text: 'Yes/No/Cancel Dialog',
+//                        }
+            ]
+        }]

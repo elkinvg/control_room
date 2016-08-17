@@ -1,0 +1,1 @@
+copy ext.ux.websocket\* ..\ext\packages\ux\classic\src\
