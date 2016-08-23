@@ -1,0 +1,11 @@
+sencha generate workspace ./
+sencha.exe generate app --ext ControlRoom ./apps/cr_main
+sencha -sdk d:\inssoft\progr\sencha\6.0.0\sen\ generate app --classic LensControl ./apps/cr_lens_control/
+sencha generate app --ext --classic Login apps/cr_login
+sencha generate app --ext --classic LensControl apps/cr_lens_control
+sencha generate app --ext --classic LensControl apps/cr_desk
+sencha generate app --ext --classic ControlRoomDesktop apps/cr_desk
+
+sencha -sdk d:\inssoft\progr\sencha\6.0.0\sen\ generate app --classic LensControl ./apps/cr_lens_control/
+
+sencha app build
