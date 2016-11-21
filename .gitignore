@@ -7,3 +7,5 @@
 !/apps/
 /apps/cr_*
 !Readme.md
+!workspace.json_new_6_2
+!workspace.json_old_6_0_0
