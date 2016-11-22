@@ -2,7 +2,6 @@
 !/packages/
 !/diff_files/
 !.gitignore
-!workspace.json
 !components/
 !/apps/
 /apps/cr_*
