@@ -54,8 +54,7 @@ Ext.define('Common_d.Property', {
     config : {
 		urllogin: '/tango/____/____/1', // путь к танго-машине отвечающей за авторизацию (аутентификацию)
 		wsforlens: 'url_вэбсокета/wsj/', // при использовани wsproxy
-		//wsforlens: 'url_вэбсокета:7890?',
-		//wsforlens: 'elkin-jinr.ddns.net:7777?'
+		//wsforlens: 'url_вэбсокета:порт?',
     },
     constructor: function(config) {
         this.initConfig(config);
