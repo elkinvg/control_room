@@ -4,7 +4,7 @@
  - LensControl apps/cr_lens_control
  - ControlRoom apps/cr_main/
 
-# Начало работы
+### Начало работы
 
 Для начала работы нужно сначала сгенерировать sencha Workspace, командой
 
@@ -47,27 +47,22 @@ sencha generate app --ext --classic NameProj ./apps/project_dir/
 
 --classic используется, если генерируется классическое приложения без версии для планшетов.
 
-В директории `.sencha\workspace\` в файл `./sencha.cfg` добавить свойство `workspace.classpath=${workspace.dir}/common_d/src` для добавления этой директории в окружение Sencha при поиске объявленных классов. Определять класс в этой директории нужно с именем `Ext.define('Common_d.ИМЯ_КЛАССА=ИМЯ_ФАЙЛА_БЕЗ_JS')`. В данном случае, в этой директории определён скрипт  Property.js,  в котором будут определены нужные конфиги для приложений (например cr_contol_room)
+В директории `apps/common_d/src` в файл `./Property.js` нужно прописать необходимые свойства
 
-```javascript
-Ext.define('Common_d.Property', {
-    config : {
-		urllogin: '/tango/____/____/1', // путь к танго-машине отвечающей за авторизацию (аутентификацию)
-		wsforlens: 'url_вэбсокета/wsj/', // при использовани wsproxy
-		//wsforlens: 'url_вэбсокета:порт?',
-    },
-    constructor: function(config) {
-        this.initConfig(config);
-        this.self;
-    }
-}
-);
-```
+ - `wsforlens` - указать url вэбсокета, с которго будут получаться данные
+ - `wsforlens_ro` - указать url вэбсокета, с которго будут получаться данные в режиме ro
 
- ---------------------------------------------
-
-For generating workspace run these commands:
-
-```sh
- sencha generate workspace ./
-```
+ ```javascript
+ Ext.define('Common_d.Property', {
+   config : {
+ 	wsforlens: 'url_вэбсокета/wsj/', // при использовани wsproxy
+   //wsforlens: 'url_вэбсокета:порт?', при использовании порта
+   wsforlens_ro: 'url_вэбсокета:порт?' // для режима ro (readonly)
+   },
+   constructor: function(config) {
+       this.initConfig(config);
+       this.self;
+   }
+ }
+ );
+ ```
