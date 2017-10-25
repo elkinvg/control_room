@@ -47,22 +47,3 @@ sencha generate app --ext --classic NameProj ./apps/project_dir/
 
 --classic используется, если генерируется классическое приложения без версии для планшетов.
 
-В директории `apps/common_d/src` в файл `./Property.js` нужно прописать необходимые свойства
-
- - `wsforlens` - указать url вэбсокета, с которго будут получаться данные
- - `wsforlens_ro` - указать url вэбсокета, с которго будут получаться данные в режиме ro
-
- ```javascript
- Ext.define('Common_d.Property', {
-   config : {
- 	wsforlens: 'url_вэбсокета/wsj/', // при использовани wsproxy
-   //wsforlens: 'url_вэбсокета:порт?', при использовании порта
-   wsforlens_ro: 'url_вэбсокета:порт?' // для режима ro (readonly)
-   },
-   constructor: function(config) {
-       this.initConfig(config);
-       this.self;
-   }
- }
- );
- ```
